@@ -1,0 +1,21 @@
+.nav-link {
+  margin-left: 40px;
+}
+#outerSection {
+  background-color: rgba(13, 110, 253, 0.8);
+}
+#heroSection input{
+  width: 100%;
+  padding: 5%;
+  border-radius: 10px;
+  word-wrap: normal;
+  margin-bottom: 15px;
+  
+}
+#heroSection a{
+    color: white;
+}
+
+#heroSection{
+    padding: 5% 20%;
+}
