@@ -1,3 +1,4 @@
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
 .nav-link {
   margin-left: 40px;
 }
@@ -5,7 +6,7 @@
   background-color: rgba(13, 110, 253, 0.8);
 }
 #heroSection input{
-  width: 100%;
+  /* width: 100%; */
   padding: 5%;
   border-radius: 10px;
   word-wrap: normal;

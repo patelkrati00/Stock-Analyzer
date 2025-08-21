@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    // <div className="container">
+    <div className="container">
     <nav
       class="navbar navbar-expand-lg border-bottom"
       style={{ backgroundColor: "#fff" }}
@@ -61,7 +61,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-    // </div>
+  </div>
   );
 }
 
