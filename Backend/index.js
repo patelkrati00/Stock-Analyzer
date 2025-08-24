@@ -4,6 +4,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const authRoute = require("./Routes/AuthRoute");
+const cookieParser = require("cookie-parser");
 
 const { HoldingsModel } = require('./model/HoldingsModel');
 const { PositionsModel } = require('./model/PositionsModel');
@@ -209,6 +211,11 @@ app.get("/allPositions", async (req, res) => {
     let allPositions = await PositionsModel.find({});
     res.json(allPositions);
 });
+app.use(cookieParser());
+
+
+app.use("/", authRoute);
+
 
 app.listen(PORT, () => {
     console.log("Server is running on port 3002");
